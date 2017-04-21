@@ -1,0 +1,88 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org" class="ng-app:mama100MKTApp" id="ng-app" ng-app="mama100MKTApp">
+<head>
+    <meta charset="utf-8">
+    <title>找回密码</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/public.css" rel="stylesheet" type="text/css">   
+</head>
+<body>
+<div class="headWrap">
+  <div class="head">
+      		<a class="download pr20">妈妈100官网</a>|<a class="download pl20">妈妈100手机版下载</a>
+            <span class="headR fr"><a class="pr10">用户名</a>|<a class="tdu pl10">退出</a></span>
+      </div>
+      <div class="logo">
+      	 <div class="logoContent">
+      		<div class="logoImg"><img src="images/mama100.png"></div>
+           <div class="tel">020-88888888</div>
+         </div>
+      </div>
+</div>
+<div class="index_wrap">
+      <ul class="nav_wrap">
+      		<li class="current">入驻注册</li><span class="selectedTail"><img src="images/selectedtail.png" width="16" height="41"></span>
+            <li>公司信息提交</li><span class="noselected"><img src="images/noselected.png" width="16" height="41"></span>
+            <li>品牌信息提交</li><span class="noselected"><img src="images/noselected.png" width="16" height="41"></span>
+            <li>信息审核</li><span class="noselected"><img src="images/noselected.png" width="16" height="41"></span>
+            <li>合同签订</li><span class="noselected"><img src="images/noselected.png" width="16" height="41"></span>
+            <li>入驻成功</li><span class="navTail"><img src="images/navtail.png" width="13" height="41"></span>
+      </ul>
+      <!--找回密码-->
+  	  <div class="findPasswordW">
+      		<div class="findPasswordTitleW"><h1 class="findPasswordTitle">登陆邮箱找回密码</h1></div>
+            <dl class="findPasswordInput">
+                        <dd>公司名称：</dd><dt><input type="text" class="selectBox"><span class="right"></span><p class="pt5"><span class="wramming">*请输入正确的邮箱地址，XXXXX@XXX.com</span></p></dt>
+            </dl>
+        	<dl class="findPasswordInput">
+                    <dd>公司名称：</dd><dt><input type="text" class="verification">
+                    			<img src="images/findPwyanzhenma.jpg"><a class="change pl5">看不清，换一张</a>
+					<p class="pt5"><span class="wramming">*验证码输入错误，请重新输入</span></p><p class="mt10"><button class="sendverify"></button></p></dt>
+
+        	</dl>
+      </div>
+      <!--找回密码-->
+      <!--验证邮箱-->
+      <div class="findPasswordW">
+      		<div class="findPasswordTitleW"><h1 class="findPasswordTitle">验证邮箱，找回密码</h1></div>
+            <div class="findPassword">
+              <div class="findPasswordImg"><img src="images/letter.png" width="100" height="100"></div>
+           	  <div class="sendMailWrap ml10 mt15"><h2 class="sendMail fc-000">验证邮件已发送到邮箱<a class="mail">XXXXXXX@XXXX.com</a></h2><p class="continueRegister fc-484848">请在24小时内点击邮箱中的链接找回密码</p><button class="loginMail mt20"></button>
+              </div>
+              <div class="cb">
+              <h2 class="noMail fs-20 mt20">还没收到邮件？</h2>
+              <p class="notMailAdvice">尝试到广告邮件、垃圾邮件目录里找找看</p>
+              <p class="notMailAdvice">如果还未收到<a class="resend pl10">重新发送</span></p>
+              </div>  
+            </div>
+      </div>
+      <!--验证邮箱-->
+      
+      <!--设定新密码-->
+      <div class="findPasswordW">
+      	  <div class="findPasswordTitleW"><h1 class="findPasswordTitle">设定新密码</h1></div>
+          <div class="">
+                    <dl class="findPasswordInput">
+                        <dd>设定新密码：</dd><dt><input type="text" class="selectBox"><span class="right"></span>
+                        	<div class="levelW pl10 mt10">
+                                <span class="weak">弱</span>                               
+                                <span class="passwordLevel1"></span>
+                                <span class="passwordLevel2"></span>
+                                <span class="passwordLevel3"></span>                                
+                                <span  class="strong fs-16 fc-484848">强</span>
+                            </div>
+                        </dt>
+            		</dl>
+                    <dl class="findPasswordInput">
+                        <dd>确定新密码：</dd><dt><input type="text" class="selectBox"><p class="pt5"><span class="wramming">* 新密码输入错误，请重新输入</span></p></dt>
+            		</dl>
+                    
+                    <button class="updatePassword"></button>
+          </div>
+      </div>
+      <!--设定新密码-->
+</div>
+</body>
+</html>

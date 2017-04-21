@@ -1,0 +1,300 @@
+<!doctype html>
+<html xmlns:ng="http://angularjs.org" class="ng-app:mama100MKTApp" id="ng-app" ng-app="mama100MKTApp">
+<head>
+    <meta charset="utf-8">
+    <title>公司信息提交</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <link href="css/companySubmit.css" rel="stylesheet" type="text/css">
+    <link href="css/public.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="headWrap">
+  <div class="head">
+      		<a class="download pr20">妈妈100官网</a>|<a class="download pl20">妈妈100手机版下载</a>
+            <span class="headR fr"><a class="pr10">用户名</a>|<a class="tdu pl10">退出</a></span>
+      </div>
+      <div class="logo">
+      	 <div class="logoContent">
+      		<div class="logoImg"><img src="images/mama100.png" width="237" height="54"></div>
+           <div class="tel">020-88888888</div>
+         </div>
+      </div>
+</div>
+<div class="index_wrap">
+      <ul class="nav_wrap">
+      		<li>入驻注册</li><span class="selectedHead"><img src="images/selectedhead.png" width="16" height="41"></span>
+            <li class="current">公司信息提交</li><span class="selectedTail"><img src="images/selectedtail.png" width="16" height="41"></span>
+            <li >品牌信息提交</li><span class="noselected"><img src="images/noselected.png" width="16" height="41"></span>
+            <li>信息审核</li><span class="noselected"><img src="images/noselected.png" width="16" height="41"></span>
+            <li>合同签订</li><span class="noselected"><img src="images/noselected.png" width="16" height="41"></span>
+            <li>入驻成功</li><span class="navTail"><img src="images/navtail.png" width="13" height="41"></span>
+      </ul>
+      <h1 class="companyInfoTxt mt20 mb20">品牌信息提交</h1>
+      <div class="submitRequest">
+      		<p>1. 信息提交前，请务必先了解妈妈100商家入驻须知；</p>
+			<p>2. 以下所需要上传电子版资质仅支持JPG、GIF、PNG格式的图片，大小不超过1M，且必须加盖企业彩色公章。</p>
+            <p>3. 以下信息为必填项（除额外说明）。 </p>
+            <p>4. 填写的信息需与相应的证件内容完全符合。</p>
+            <span class="close"></span>
+      </div>
+      <ul class="submitStep mt20">
+      		<li class="hover"><p class="pt10">营业执照</p><p><span class="hoverFinish">已完成</span></p></li>
+            <li><p class="pt10">营业执照</p><p><span class="Finish">已完成</span></p></p></li>
+            <li><p class="pt10">营业执照</p><p><span class="Finish">已完成</span></p></p></li>
+            <li><p class="pt10">营业执照</p><p><span class="notFinish">未完成</span></p></p></li>
+            <li><p class="pt10">营业执照</p><p><span class="notFinish">未完成</span></p></p></li>
+      </ul>
+      <!--营业执照-->
+      <div class="companyInfoContent mb20">
+      		<h1 class="companyInfo">营业执照信息</h1>
+            <div class="businessLicenseW">
+            		<div class="businessLicenseL">
+                    	<dl class="companyInfoInput">
+                            <dd>公司名称：</dd><dt><input type="text" class="companyInput"><p class="warn">*公司名称只能由中文、英文、数字及“_”、“-”、()、（）组成</p></dt>
+                        </dl>
+                        <dl class="companyInfoInput">
+                            <dd>营业执照注册号：</dd><dt><input type="text" class="companyInput"><p class="warn">*请输入正确的组册号，，只能由数字组成</p></dt>
+                        </dl>
+                        <dl class="companyInfoInput">
+                            <dd>营业执照详细地址：</dd><dt><select class="address"><option>请选择</option></select><select class="address ml5"></select><input type="text" class="addressInput ml5"></dt>
+                        </dl>
+                        <dl class="companyInfoInput">
+                            <dd>成立日期：</dd><dt><input type="text" class="date"><span class="circle ml15">永久</span></dt>
+                        </dl>
+                        <dl class="companyInfoInput">
+                            <dd>营业期限：</dd><dt><input type="text" class="date"><span class="confirm mt10 ml10"></span></dt>
+                        </dl>
+                        <dl class="companyInfoInput">
+                            <dd>公司注册资本：</dd><dt><input type="text" class="companyInput"><span class="pl10">万元(RMB)</span><p class="support">最多支持小数点后两位，若为其他币种，请折算成人名币。</p><p class="warn">*请输入正确的注册资本，只能由数字组成</p></dt>
+                        </dl>
+                        <dl class="companyInfoInput">
+                            <dd>经营范围：</dd><dt><textarea class="selectBox"></textarea></dt>
+                        </dl>
+                        <dl class="companyInfoInput">
+                          <dd>法定代表人姓名：</dd><dt><input type="text" class="companyInput"><p class="warn">*姓名只能由中文或英文组成</p></dt>
+                      </dl>
+                        <dl class="companyInfoInput">
+                            <dd>身份证件号：</dd><dt><input type="text" class="companyInput"><input class="ml10" type="checkbox">非大陆证件<p class="warn">*请输入正确的身份证号码</p></dt>
+                        </dl>
+                    </div>
+                    <div class="businessLicenseR">
+                    		<div class="uploadLicenseW">
+                                <p><span>营业执照副本电子版：</span><a class="shili">查看实例</a></p>
+                                <div class="licenseImg mt5"><img src="images/license.jpg" width="250" height="150"></div>
+                                <p class="warn">*请输入正确的身份证号码</p>
+                                <button class="uploadLicense ml50 mt15"></button>
+                            </div>
+                            <div class="uploadLicenseW">
+                                <p><span>法人身份证件电子版：</span><a class="shili">查看实例</a></p>
+                                <div class="licenseImg mt5"><img src="images/id.jpg" width="250" height="150"></div>
+                                <p class="warn">*请上传您的法人身份证</p>
+                                <button class="uploadId ml50 mt15"></button>
+                            </div>
+                    </div>
+            </div>
+      </div>
+      <!--营业执照-->
+      
+      <!--组织机构代码-->
+      <div class="organizeCode">
+          <div class="companyInfoContent">
+                <h1 class="companyInfo">组织机构代码证</h1>
+                <div class="organizeCodeW">
+                        <div class="organizeCodeL">
+                            <dl class="companyInfoInput">
+                                <dd>组织结构代码：</dd><dt><input type="text" class="organizeInputO mr10">-<input type="text" class="organizeInputT ml10"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>组织结构代码有效期：</dd><dt><input type="text" class="date fn"><p><input type="text" class="date fn mt20"></p></dt>
+                            </dl>
+                        </div>
+                        <div class="organizeCodeR">
+                                <div class="uploadLicenseW">
+                                    <p><span>组织机构代码证电子版：</span><a class="shili">查看实例</a></p>
+                                    <div class="licenseImg mt5"></div>
+                                    <p class="warn">*请上传您的组织机构代码证</p>
+                                    <button class="uploadOrganizeLics ml50 mt15"></button>
+                                </div>
+                        </div>
+                </div>
+          </div>
+      </div>    
+      <!--组织机构代码-->
+      
+      <!--税务登记证-->
+      <div class="taxCertificate">
+          <div class="companyInfoContent">
+                <h1 class="companyInfo">税务登记证</h1>
+                <div class="taxCertificateW">
+                        <div class="taxCertificateL">
+                            <dl class="companyInfoInput">
+                                <dd>纳税人识别号：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>纳税人类型：</dd><dt><select class="taxType"><option>一般纳税人</option></select></dt>
+                            </dl>
+                        </div>
+                        <div class="taxCertificateR">
+                                <div class="uploadLicenseW">
+                                    <p><span>税务登记证证电子版：</span><a class="shili">查看实例</a></p>
+                                    <div class="licenseImg mt5"><img src="images/taxlicense.jpg" width="250" height="150"></div>
+                                    <p class="warn">*请上传您的税务登记证</p>
+                                    <button class="uploadTaxLics ml50 mt15"></button>
+                                </div>
+                        </div>
+                </div>
+                <div class="btn"><button class="save"></button></div>
+          </div>
+      </div>
+      <!--税务登记证-->
+      
+      <!--开户许可证（否）-->
+      <div class="openAccount">
+          <div class="companyInfoContent">
+                <h1 class="companyInfo">开户许可证</h1>
+                <div class="openAccountW">
+                        <div class="openAccountL">
+                            <dl class="companyInfoInput">
+                                <dd>银行开户名：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>公司银行账号：</dd><dt><select class="taxType"><option>中国银行</option></select></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>开户银行：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>开户银行支行名称：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                            <dd>开户所在地：</dd><dt><select class="address"><option>请选择</option></select><select class="address ml5"></select><p class="openConfirm mt15">此开户许可证中基本户作为结算银行账户？</p><p class="openConfirmTxt mt10"><span class="selected mr10"></span><span>是</span><span class="notSelected ml10 mr10"></span><span>否</span></p></dt>
+                        </dl>
+                        </div>
+                        <div class="openAccountR">
+                                <div class="uploadLicenseW">
+                                    <p><span>开户许可证电子版：</span><a class="shili">查看实例</a></p>
+                                    <div class="licenseImg mt5"></div>
+                                    <button class="uploadOpenAccount ml50 mt15"></button>
+                                </div>
+                        </div>
+                </div>
+                <h1 class="companyInfo">结算银行账户</h1>
+                 <div class="businessLicenseW">
+                        <div class="businessLicenseL">
+                            <dl class="companyInfoInput">
+                                <dd>结算银行开户名：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>结算银行账号：</dd><dt><select class="taxType"><option>中国银行</option></select></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>结算银行：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>结算银行支行名称：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                            <dd>结算银行所在地：</dd><dt><select class="address"><option>请选择</option></select><select class="address ml5"></select></dt>
+                        </dl>
+                        </div>
+                        <div class="businessLicenseR">
+                                <div class="uploadLicenseW">
+                                    <p><span>项款往来账户确认函：</span><a class="shili">查看实例</a></p>
+                                    <div class="licenseImg mt5"></div>
+                                     <p class="warn">*请正确填充并盖公司章</p>
+                                    <button class="uploadConfirm ml50 mt15"></button>
+                                    <a class="ml50 downloadModel mt10">下载款项往来账户确认函模板</a>
+                                </div>
+                        </div>
+                </div>
+                <div class="btn"><button class="save"></button></div>
+          </div>
+      </div>
+      <!--开户许可证-->
+      
+      <!--公司联系信息-->
+      <div class="companyContact">
+          <div class="companyInfoContent">
+                <h1 class="companyInfo">公司联系信息</h1>
+                <div class="companyContactW">
+                        <div class="companyContactL">
+                            <dl class="companyInfoInput">
+                                <dd>业务联系人：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>业务联系人手机：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>业务联系人邮箱：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>财务联系人：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>财务联系人手机：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>财务联系人邮箱：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>公司办公地址：</dd><dt><select class="address"><option>请选择</option></select> <select class="address"></select> <input type="text" class="addressInput mt2"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>公司邮编：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>公司电话：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                            <dl class="companyInfoInput">
+                                <dd>消费者官方客服电话：</dd><dt><input type="text" class="companyInput"></dt>
+                            </dl>
+                        </div>
+                        <div class="companyContactR">
+                                <div class="uploadLicenseW">
+                                    <p><span>开户许可证电子版：</span><a class="bigPicture">查看大图</a></p>
+                                    <div class="licenseImg mt5"></div>
+                                    <button class="attorney ml50 mt15"></button>
+                                </div>
+                        </div>
+                </div>
+                 
+                <div class="btn"><button class="save"></button></div>
+          </div>
+      </div>
+      <!--公司联系信息-->
+      
+      <!--弹窗公司信息提交成功-->
+      <div class="mask f-dn"></div>
+      <div class="alertBox f-dn">
+      		<h3 class="instructions">操作成功<span class="instructionsClose"></span></h3>
+            <h1 class="success">公司信息提交完成</h1>
+            <div class="continueW">
+            	<button class="btnBg mt30">下一步，品牌信息提交</button>
+            </div>
+      </div>
+      <!--弹窗公司信息提交成功-->     
+      
+       <!--弹窗公司信息操作失败-->
+      <div class="alertBox f-dn">
+      		<h3 class="instructions">操作成功<span class="instructionsClose"></span></h3>
+            <h1 class="failure">上次失败，上传的图超过1M</h1>
+            <p class="failureWarm">上传电子版资质大小不超过1M，且必须加盖企业彩色公章。</p>
+            <div class="continueW">
+            	<button class="loadAgain mt10"></button>
+            </div>
+      </div>
+      <!--弹窗公司信息操作失败-->
+      
+       <!--弹窗公司信息提交成功-->
+      <div class="alertBox f-dn">
+      		<h3 class="instructions">提示<span class="instructionsClose"></span></h3>
+            <h1 class="refirm">确认已上传的电子版图？</h1>
+            <div class="continueW">
+            	<button class="ok mt30"></button><button class="cancle mt30"></button>
+            </div>
+      </div>
+      <!--弹窗公司信息提交成功-->
+</div>
+</body>
+</html>
